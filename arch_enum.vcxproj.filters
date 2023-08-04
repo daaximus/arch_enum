@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="demo_logs\note.txt" />
-    <Text Include="demo_logs\vmware_msr_log_20230804T172348.log" />
-    <Text Include="demo_logs\13900k_msr_log_20230804T170105.log" />
+    <Text Include="demo_logs\vmware_msr_log_20230804T172348.lxx" />
+    <Text Include="demo_logs\13900k_msr_log_20230804T170105.lxx" />
   </ItemGroup>
 </Project>

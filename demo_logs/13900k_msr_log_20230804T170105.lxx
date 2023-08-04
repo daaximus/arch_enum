@@ -1,0 +1,1839 @@
+[[EXECUTION REPORT]]
+               [unsupported_msr | 0] {1FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 6] {40h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 10] {276DA2D599D9h}
+                                                                 value {    0:64   }               = 1h
+               [ia32_platform_id | 17] {4000000000000h}
+                                                             reserved1 {    0:49   }               = 0h
+                                                           platform_id {   50:52   }               = 1h
+                                                             reserved2 {   53:63   }               = 0h
+               [ia32_apic_base | 1B] {FEE00C00h}
+                                                             reserved1 {    0:7    }               = 0h
+                                                              bsp_flag {    8:8    }               = 0h
+                                                             reserved2 {    9:9    }               = 0h
+                                                    enable_x2apic_mode {   10:10   }               = 1h
+                                                    apic_global_enable {   11:11   }               = 1h
+                                                             apic_Base {   12:38   }               = FEE00h
+                                                             reserved3 {   39:63   }               = 0h
+               [unsupported_msr | 20] {350EEC1F9866521h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 21] {DE1F549FC0756BEh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 22] {8E2A605E2B89849Dh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 23] {79BD6994C6A790C1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 2A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 2E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 33] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 34] {158h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 35] {180020h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_feature_control | 3A] {5h}
+                                                              lock_bit {    0:0    }               = 1h
+                                                 enable_vmx_inside_smx {    1:1    }               = 0h
+                                                enable_vmx_outside_smx {    2:2    }               = 1h
+                                                             reserved1 {    3:7    }               = 0h
+                                         senter_local_function_enables {    8:14   }               = 0h
+                                                  senter_global_enable {   15:15   }               = 0h
+                                                             reserved2 {   16:16   }               = 0h
+                                             sgx_launch_control_enable {   17:17   }               = 0h
+                                                     sgx_global_enable {   18:18   }               = 0h
+                                                             reserved3 {   19:19   }               = 0h
+                                                               lmce_on {   20:20   }               = 0h
+                                                             reserved4 {   21:63   }               = 0h
+               [unsupported_msr | 3B] {21h}
+                                                                 value {    0:64   }               = 1h
+               [ia32_spec_ctrl | 48] {0h}
+                           indirect_branch_restricted_speculation_ibrs {    0:0    }               = 0h
+                        single_thread_indirect_branch_predictors_stibp {    1:1    }               = 0h
+                                 speculative_store_bypass_disable_ssbd {    2:2    }               = 0h
+                                                           ipred_dis_u {    3:3    }               = 0h
+                                                           ipred_dis_s {    4:4    }               = 0h
+                                                           rrsba_dis_u {    5:5    }               = 0h
+                                                           rrsba_dis_s {    6:6    }               = 0h
+                                                                  psfd {    7:7    }               = 0h
+                                                                ddpd_u {    8:8    }               = 0h
+                                                              reserved {    9:9    }               = 0h
+                                                             bhi_dis_s {   10:10   }               = 0h
+               [unsupported_msr | 4E] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 7A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 80] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 87] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 8B] {10C00000000h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_smm_monitor_ctl | 9B] {0h}
+                                                                 valid {    0:0    }               = 0h
+                                                             reserved1 {    1:1    }               = 0h
+                                     controls_smi_unblocking_by_vmxoff {    2:2    }               = 0h
+                                                             reserved2 {    3:10   }               = 0h
+                                                             mseg_base {   11:31   }               = 0h
+                                                             reserved3 {   32:63   }               = 0h
+               [unsupported_msr | A0] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | A5] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | A7] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | AF] {2h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_misc_package_ctls | BC] {0h}
+                                               energy_filtering_enable {    0:0    }               = 0h
+                                                              reserved {    1:63   }               = 0h
+               [ia32_pmc0 | C1] {0h}
+                                         general_performance_counter_0 {    0:63   }               = 0h
+               [ia32_pmc1 | C2] {0h}
+                                         general_performance_counter_1 {    0:63   }               = 0h
+               [ia32_pmc2 | C3] {0h}
+                                         general_performance_counter_2 {    0:63   }               = 0h
+               [ia32_pmc3 | C4] {0h}
+                                         general_performance_counter_3 {    0:63   }               = 0h
+               [ia32_pmc4 | C5] {0h}
+                                         general_performance_counter_4 {    0:63   }               = 0h
+               [ia32_pmc5 | C6] {FFFFFFFF94D1h}
+                                         general_performance_counter_5 {    0:63   }               = 0h
+               [ia32_pmc6 | C7] {0h}
+                                         general_performance_counter_6 {    0:63   }               = 0h
+               [ia32_pmc7 | C8] {0h}
+                                         general_performance_counter_7 {    0:63   }               = 0h
+               [unsupported_msr | CD] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | CE] {8080838F1811E00h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_core_capabilities | CF] {FDh}
+                                                              reserved {    0:63   }               = 0h
+               [ia32_umwait_control | E1] {0h}
+                                         c0_2_is_not_allowed_by_the_os {    0:0    }               = 0h
+                                                              reserved {    1:1    }               = 0h
+                             determines_the_maximum_time_in_tsc_quanta {    2:31   }               = 0h
+               [unsupported_msr | E2] {74008008h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E4] {51814h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_mperf | E7] {51D5498258h}
+                                  c0_mcnt_c0_tsc_frequency_clock_count {    0:63   }               = 0h
+               [ia32_aperf | E8] {2991E5A5A2h}
+                               c0_acnt_c0_actual_frequency_clock_count {    0:63   }               = 0h
+               [ia32_mtrrcap | FE] {5D0Ah}
+       vcnt_the_number_of_variable_memory_type_ranges_in_the_processor {    0:7    }               = Ah
+                              fixed_range_mtrrs_are_supported_when_set {    8:8    }               = 1h
+                                                             reserved1 {    9:9    }               = 0h
+                                                 wc_supported_when_set {   10:10   }               = 1h
+                                               smrr_supported_when_set {   11:11   }               = 1h
+                                              prmrr_supported_when_set {   12:12   }               = 1h
+                                                             reserved2 {   13:63   }               = 2h
+               [unsupported_msr | 102] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 103] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 104] {0h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_arch_capabilities | 10A] {88FD6Bh}
+                                                               rdcl_no {    0:0    }               = 1h
+                                                              ibrs_all {    1:1    }               = 1h
+                                                                  rsba {    2:2    }               = 0h
+                                                    skip_l1dfl_vmentry {    3:3    }               = 1h
+                                                                ssb_no {    4:4    }               = 0h
+                                                                mds_no {    5:5    }               = 1h
+                                                     if_pschange_mc_no {    6:6    }               = 1h
+                                                              tsx_ctrl {    7:7    }               = 0h
+                                                                taa_no {    8:8    }               = 1h
+                                                           mcu_control {    9:9    }               = 0h
+                                                     misc_package_ctls {   10:10   }               = 1h
+                                                  energy_filtering_ctl {   11:11   }               = 1h
+                                                                 doitm {   12:12   }               = 1h
+                                                          sbdp_ssdp_no {   13:13   }               = 1h
+                                                              fbsdp_no {   14:14   }               = 1h
+                                                               psdp_no {   15:15   }               = 1h
+                                                             reserved1 {   16:16   }               = 0h
+                                                              fb_clear {   17:17   }               = 0h
+                                                         fb_clear_ctrl {   18:18   }               = 0h
+                                                                 rrsba {   19:19   }               = 1h
+                                                                bhi_no {   20:20   }               = 0h
+                                                  xapic_disable_status {   21:21   }               = 0h
+                                                             reserved2 {   22:22   }               = 0h
+                                                   overclocking_status {   23:23   }               = 1h
+                                                              pbrsb_no {   24:24   }               = 0h
+                                                             reserved3 {   25:63   }               = 0h
+               [unsupported_msr | 110] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 118] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 11F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 13A] {1000000000h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 13C] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 140] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 150] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 151] {3h}
+                                                                 value {    0:64   }               = 1h
+               [ia32_sysenter_cs | 174] {0h}
+                                                           cs_selector {    0:15   }               = 0h
+                                                              not_used {   16:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [ia32_sysenter_esp | 175] {0h}
+                                                                   esp {    0:63   }               = 0h
+               [ia32_sysenter_eip | 176] {0h}
+                                                                   eip {    0:63   }               = 0h
+               [ia32_mcg_cap | 179] {C16h}
+                                                                 count {    0:7    }               = 16h
+                                                             mcg_ctl_p {    8:8    }               = 0h
+                                                             mcg_ext_p {    9:9    }               = 0h
+                                                            mcp_cmci_p {   10:10   }               = 1h
+                                                             mcg_tes_p {   11:11   }               = 1h
+                                                            reserved_1 {   12:15   }               = 0h
+                                                           mcg_ext_cnt {   16:23   }               = 0h
+                                                             mcg_ser_p {   24:24   }               = 0h
+                                                            reserved_2 {   25:25   }               = 0h
+                                                            mcg_elog_p {   26:26   }               = 0h
+                                                            mcg_lmce_p {   27:27   }               = 0h
+                                                            reserved_3 {   28:63   }               = 0h
+               [ia32_mcg_status | 17A] {0h}
+                                                                  ripv {    0:0    }               = 0h
+                                                                  eipv {    1:1    }               = 0h
+                                                                  mcip {    2:2    }               = 0h
+                                                                lmce_s {    3:3    }               = 0h
+                                                              reserved {    4:63   }               = 0h
+               [unsupported_msr | 17F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_perfevtsel0 | 186] {0h}
+                                                          event_select {    0:7    }               = 0h
+                                                                 umask {    8:15   }               = 0h
+                                                                   usr {   16:16   }               = 0h
+                                                                    os {   17:17   }               = 0h
+                                                                  edge {   18:18   }               = 0h
+                                                                    pc {   19:19   }               = 0h
+                                                                   int {   20:20   }               = 0h
+                                                            any_thread {   21:21   }               = 0h
+                                                                    en {   22:22   }               = 0h
+                                                                   inv {   23:23   }               = 0h
+                                                                 cmask {   24:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [ia32_perfevtsel0 | 187] {0h}
+                                                          event_select {    0:7    }               = 0h
+                                                                 umask {    8:15   }               = 0h
+                                                                   usr {   16:16   }               = 0h
+                                                                    os {   17:17   }               = 0h
+                                                                  edge {   18:18   }               = 0h
+                                                                    pc {   19:19   }               = 0h
+                                                                   int {   20:20   }               = 0h
+                                                            any_thread {   21:21   }               = 0h
+                                                                    en {   22:22   }               = 0h
+                                                                   inv {   23:23   }               = 0h
+                                                                 cmask {   24:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [ia32_perfevtsel0 | 188] {0h}
+                                                          event_select {    0:7    }               = 0h
+                                                                 umask {    8:15   }               = 0h
+                                                                   usr {   16:16   }               = 0h
+                                                                    os {   17:17   }               = 0h
+                                                                  edge {   18:18   }               = 0h
+                                                                    pc {   19:19   }               = 0h
+                                                                   int {   20:20   }               = 0h
+                                                            any_thread {   21:21   }               = 0h
+                                                                    en {   22:22   }               = 0h
+                                                                   inv {   23:23   }               = 0h
+                                                                 cmask {   24:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [ia32_perfevtsel0 | 189] {0h}
+                                                          event_select {    0:7    }               = 0h
+                                                                 umask {    8:15   }               = 0h
+                                                                   usr {   16:16   }               = 0h
+                                                                    os {   17:17   }               = 0h
+                                                                  edge {   18:18   }               = 0h
+                                                                    pc {   19:19   }               = 0h
+                                                                   int {   20:20   }               = 0h
+                                                            any_thread {   21:21   }               = 0h
+                                                                    en {   22:22   }               = 0h
+                                                                   inv {   23:23   }               = 0h
+                                                                 cmask {   24:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [ia32_perfevtsel0 | 18A] {0h}
+                                                          event_select {    0:7    }               = 0h
+                                                                 umask {    8:15   }               = 0h
+                                                                   usr {   16:16   }               = 0h
+                                                                    os {   17:17   }               = 0h
+                                                                  edge {   18:18   }               = 0h
+                                                                    pc {   19:19   }               = 0h
+                                                                   int {   20:20   }               = 0h
+                                                            any_thread {   21:21   }               = 0h
+                                                                    en {   22:22   }               = 0h
+                                                                   inv {   23:23   }               = 0h
+                                                                 cmask {   24:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [ia32_perfevtsel0 | 18B] {0h}
+                                                          event_select {    0:7    }               = 0h
+                                                                 umask {    8:15   }               = 0h
+                                                                   usr {   16:16   }               = 0h
+                                                                    os {   17:17   }               = 0h
+                                                                  edge {   18:18   }               = 0h
+                                                                    pc {   19:19   }               = 0h
+                                                                   int {   20:20   }               = 0h
+                                                            any_thread {   21:21   }               = 0h
+                                                                    en {   22:22   }               = 0h
+                                                                   inv {   23:23   }               = 0h
+                                                                 cmask {   24:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [ia32_perfevtsel0 | 18C] {0h}
+                                                          event_select {    0:7    }               = 0h
+                                                                 umask {    8:15   }               = 0h
+                                                                   usr {   16:16   }               = 0h
+                                                                    os {   17:17   }               = 0h
+                                                                  edge {   18:18   }               = 0h
+                                                                    pc {   19:19   }               = 0h
+                                                                   int {   20:20   }               = 0h
+                                                            any_thread {   21:21   }               = 0h
+                                                                    en {   22:22   }               = 0h
+                                                                   inv {   23:23   }               = 0h
+                                                                 cmask {   24:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [ia32_perfevtsel0 | 18D] {0h}
+                                                          event_select {    0:7    }               = 0h
+                                                                 umask {    8:15   }               = 0h
+                                                                   usr {   16:16   }               = 0h
+                                                                    os {   17:17   }               = 0h
+                                                                  edge {   18:18   }               = 0h
+                                                                    pc {   19:19   }               = 0h
+                                                                   int {   20:20   }               = 0h
+                                                            any_thread {   21:21   }               = 0h
+                                                                    en {   22:22   }               = 0h
+                                                                   inv {   23:23   }               = 0h
+                                                                 cmask {   24:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [unsupported_msr | 194] {F0000h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_overclocking_status | 195] {1h}
+                                                 overclocking_utilized {    0:0    }               = 1h
+                                                  undervolt_protection {    1:1    }               = 0h
+                                            overclocking_secure_status {    2:2    }               = 0h
+                                                              reserved {    3:63   }               = 0h
+               [ia32_perf_status | 198] {27B600003300h}
+                                       current_performance_state_value {    0:15   }               = 3300h
+                                                              reserved {   16:63   }               = 27B60000h
+               [ia32_perf_ctl | 199] {3300h}
+                                        target_performance_state_value {    0:15   }               = 3300h
+                                                             reserved1 {   16:31   }               = 0h
+                                                            ida_engage {   32:32   }               = 0h
+                                                             reserved2 {   33:63   }               = 0h
+               [ia32_clock_modulation | 19A] {0h}
+                        extended_on_demand_clock_modulation_duty_cycle {    0:0    }               = 0h
+                                 on_demand_clock_modulation_duty_cycle {    1:3    }               = 0h
+                                     on_demand_clock_modulation_enable {    4:4    }               = 0h
+                                                              reserved {    5:63   }               = 0h
+               [ia32_therm_interrupt | 19B] {10h}
+                                            high_temp_interrupt_enable {    0:0    }               = 0h
+                                             low_temp_interrupt_enable {    1:1    }               = 0h
+                                              prochot_interrupt_enable {    2:2    }               = 0h
+                                              forcepr_interrupt_enable {    3:3    }               = 0h
+                                        critical_temp_interrupt_enable {    4:4    }               = 1h
+                                                             reserved1 {    5:7    }               = 0h
+                                                      threshold1_value {    8:14   }               = 0h
+                                           threshold1_interrupt_enable {   15:15   }               = 0h
+                                                      threshold2_value {   16:22   }               = 0h
+                                           threshold2_interrupt_enable {   23:23   }               = 0h
+                                       power_limit_notification_enable {   24:24   }               = 0h
+                                 hardware_feedback_notification_enable {   25:25   }               = 0h
+                                                             reserved2 {   26:63   }               = 0h
+               [ia32_therm_status | 19C] {883F0000h}
+                                                        thermal_status {    0:0    }               = 0h
+                                                    thermal_status_log {    1:1    }               = 0h
+                                              prochot_or_forcepr_event {    2:2    }               = 0h
+                                                prochot_or_forcepr_log {    3:3    }               = 0h
+                                                  critical_temp_status {    4:4    }               = 0h
+                                              critical_temp_status_log {    5:5    }               = 0h
+                                             thermal_threshold1_status {    6:6    }               = 0h
+                                                thermal_threshold1_log {    7:7    }               = 0h
+                                             thermal_threshold2_status {    8:8    }               = 0h
+                                                thermal_threshold2_log {    9:9    }               = 0h
+                                               power_limitation_status {   10:10   }               = 0h
+                                                  power_limitation_log {   11:11   }               = 0h
+                                                  current_limit_status {   12:12   }               = 0h
+                                                     current_limit_log {   13:13   }               = 0h
+                                             cross_domain_limit_status {   14:14   }               = 0h
+                                                cross_domain_limit_log {   15:15   }               = 0h
+                                                       digital_readout {   16:22   }               = 3Fh
+                                                             reserved1 {   23:26   }               = 0h
+                                         resolution_in_degrees_celsius {   27:30   }               = 1h
+                                                         reading_valid {   31:31   }               = 1h
+                                                             reserved2 {   32:63   }               = 0h
+               [unsupported_msr | 19D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_misc_enable | 1A0] {850089h}
+                                                   fast_strings_enable {    0:0    }               = 1h
+                              automatic_thermal_control_circuit_enable {    3:3    }               = 1h
+                                      performance_monitoring_available {    7:7    }               = 1h
+                                      branch_trace_storage_unavailable {   11:11   }               = 0h
+                            processor_event_based_sampling_unavailable {   12:12   }               = 0h
+                            enhanced_intel_speedstep_technology_enable {   16:16   }               = 1h
+                                                    enable_monitor_fsm {   18:18   }               = 1h
+                                                    limit_cpuid_maxval {   22:22   }               = 0h
+                                                  xtpr_message_disable {   23:23   }               = 1h
+                                                        xd_bit_disable {   34:34   }               = 0h
+                                                              reserved {   35:63   }               = 0h
+               [unsupported_msr | 1A1] {2AD6h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1A2] {641400h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1A4] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1A6] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1A7] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1A8] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1AA] {30C2h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1AD] {3333333333333333h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1AE] {807060504030201h}
+                                                                 value {    0:64   }               = 1h
+               [ia32_energy_perf_bias | 1B0] {6h}
+                                               power_policy_preference {    0:3    }               = 6h
+                                                              reserved {    4:63   }               = 0h
+               [ia32_package_therm_status | 1B1] {883F0000h}
+                                                    pkg_thermal_status {    0:0    }               = 0h
+                                                pkg_thermal_status_log {    1:1    }               = 0h
+                                                     pkg_prochot_event {    2:2    }               = 0h
+                                                       pkg_prochot_log {    3:3    }               = 0h
+                                       pkg_critical_temperature_status {    4:4    }               = 0h
+                                   pkg_critical_temperature_status_log {    5:5    }               = 0h
+                                        pkg_thermal_threshold_1_status {    6:6    }               = 0h
+                                           pkg_thermal_threshold_1_log {    7:7    }               = 0h
+                                        pkg_thermal_threshold_2_status {    8:8    }               = 0h
+                                           pkg_thermal_threshold_1_log {    9:9    }               = 0h
+                                           pkg_power_limitation_status {   10:10   }               = 0h
+                                              pkg_power_limitation_log {   11:11   }               = 0h
+                                                   pkg_digital_readout {   16:22   }               = 3Fh
+                   hardware_feedback_interface_structure_change_status {   26:26   }               = 0h
+                                                              reserved {   12:15   }               = 0h
+                                                              reserved {   23:25   }               = 0h
+                                                              reserved {   27:63   }               = 11h
+               [ia32_package_therm_interrupt | 1B2] {2000000h}
+                                 pkg_high_temperature_interrupt_enable {    0:0    }               = 0h
+                                  pkg_low_temperature_interrupt_enable {    1:1    }               = 0h
+                                          pkg_prochot_interrupt_enable {    2:2    }               = 0h
+                                         pkg_overheat_interrupt_enable {    4:4    }               = 0h
+                                                 pkg_threshold_1_value {    8:14   }               = 0h
+                                      pkg_threshold_1_interrupt_enable {   15:15   }               = 0h
+                                                 pkg_threshold_2_value {   16:22   }               = 0h
+                                      pkg_threshold_2_interrupt_enable {   23:23   }               = 0h
+                                   pkg_power_limit_notification_enable {   24:24   }               = 0h
+                                    hardware_feedback_interrupt_enable {   25:25   }               = 1h
+                                                              reserved {    3:3    }               = 0h
+                                                              reserved {    5:7    }               = 0h
+                                                              reserved {   26:63   }               = 0h
+               [unsupported_msr | 1C6] {3h}
+                                                                 value {    0:64   }               = 1h
+               [ia32_debugctl | 1D9] {0h}
+                                                                   lbr {    0:0    }               = 0h
+                                                                   btf {    1:1    }               = 0h
+                                                                   bld {    2:2    }               = 0h
+                                                              reserved {    3:5    }               = 0h
+                                                                    tr {    6:6    }               = 0h
+                                                                   bts {    7:7    }               = 0h
+                                                                 btint {    8:8    }               = 0h
+                                                            bts_off_os {    9:9    }               = 0h
+                                                           bts_off_usr {   10:10   }               = 0h
+                                                    freeze_lbrs_on_pmi {   11:11   }               = 0h
+                                                 freeze_perfmon_on_pmi {   12:12   }               = 0h
+                                                     enable_uncore_pmi {   13:13   }               = 0h
+                                                      freeze_while_smm {   14:14   }               = 0h
+                                                             rtm_debug {   15:15   }               = 0h
+                                                              reserved {   16:63   }               = 0h
+               [ia32_ler_from_ip | 1DD] {0h}
+                                                               from_ip {    0:63   }               = 0h
+               [ia32_ler_to_ip | 1DE] {0h}
+                                                                 to_ip {    0:63   }               = 0h
+               [ia32_ler_info | 1E0] {0h}
+                                                           undefined_1 {    0:55   }               = 0h
+                                                               br_type {   56:59   }               = 0h
+                                                           undefined_2 {   60:60   }               = 0h
+                                                             tsx_abort {   61:61   }               = 0h
+                                                                in_tsx {   62:62   }               = 0h
+                                                               mispred {   63:63   }               = 0h
+               [unsupported_msr | 1F0] {74h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1F1] {0h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_smrr_physbase | 1F2] {7F000006h}
+                                                                  type {    0:7    }               = 6h
+                                                            reserved_1 {    8:11   }               = 0h
+                                                              physbase {   12:31   }               = 7F000h
+                                                            reserved_2 {   32:63   }               = 0h
+               [ia32_smrr_physmask | 1F3] {FF000C00h}
+                                                            reserved_1 {    0:10   }               = 400h
+                                                                 valid {   11:11   }               = 1h
+                                                              physmask {   12:31   }               = FF000h
+                                                            reserved_2 {   32:63   }               = 0h
+               [unsupported_msr | 1F5] {3FFFFFC00C00h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1FB] {1Eh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1FC] {FC005Fh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 200] {6h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 201] {3FF000000800h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 202] {80000000h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 203] {3FFF80000800h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 204] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 205] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 206] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 207] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 208] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 209] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 20A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 20B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 20C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 20D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 20E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 20F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 210] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 211] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 212] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 213] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 250] {606060606060606h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 258] {606060606060606h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 259] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 268] {505050505050505h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 269] {505050505050505h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 26A] {505050505050505h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 26B] {505050505050505h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 26C] {505050505050505h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 26D] {505050505050505h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 26E] {505050505050505h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 26F] {505050505050505h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 276] {3000000000h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_pat | 277] {7010600070106h}
+                                                                   pa0 {    0:2    }               = 6h
+                                                             reserved1 {    3:7    }               = 0h
+                                                                   pa1 {    8:10   }               = 1h
+                                                             reserved2 {   11:15   }               = 0h
+                                                                   pa2 {   16:18   }               = 7h
+                                                             reserved3 {   19:23   }               = 0h
+                                                                   pa3 {   24:26   }               = 0h
+                                                             reserved4 {   27:31   }               = 0h
+                                                                   pa4 {   32:34   }               = 6h
+                                                             reserved5 {   35:39   }               = 0h
+                                                                   pa5 {   40:42   }               = 1h
+                                                             reserved6 {   43:47   }               = 0h
+                                                                   pa6 {   48:50   }               = 7h
+                                                             reserved7 {   51:55   }               = 0h
+                                                                   pa7 {   56:58   }               = 0h
+                                                             reserved8 {   59:63   }               = 0h
+               [ia32_mc0_ctl2 | 280] {40000001h}
+                                       corrected_error_count_threshold {    0:14   }               = 1h
+                                                             reserved1 {   15:29   }               = 0h
+                                                               cmci_en {   30:30   }               = 1h
+                                                             reserved2 {   31:63   }               = 0h
+               [unsupported_msr | 281] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 282] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 283] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 284] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 285] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 286] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 287] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 288] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 289] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 28A] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 28B] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 28C] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 28D] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 28E] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 28F] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 290] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 291] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 292] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 293] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 294] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 295] {40000001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 2A0] {7EC0000Eh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 2D9] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 2E0] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 2E7] {1h}
+                                                                 value {    0:64   }               = 1h
+               [ia32_mtrr_def_type | 2FF] {C00h}
+                                                   default_memory_type {    0:2    }               = 0h
+                                                             reserved1 {    3:9    }               = 0h
+                                               fixed_range_mtrr_enable {   10:10   }               = 1h
+                                                           mtrr_enable {   11:11   }               = 1h
+                                                             reserved2 {   12:63   }               = 0h
+               [unsupported_msr | 302] {FFFFFFFF0001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 304] {59A54000h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 305] {0h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_fixed_ctr0 | 309] {0h}
+                                              counts_instr_retired_any {    0:63   }               = 0h
+               [ia32_fixed_ctr1 | 30A] {0h}
+                                          counts_cpu_clk_unhalted_core {    0:63   }               = 0h
+               [ia32_fixed_ctr2 | 30B] {0h}
+                                           counts_cpu_clk_unhalted_ref {    0:63   }               = 0h
+               [unsupported_msr | 30C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 329] {0h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_perf_capabilities | 345] {74FFh}
+                                                            lbr_format {    0:5    }               = 3Fh
+                                                             pebs_trap {    6:6    }               = 1h
+                                                   pebs_save_arch_regs {    7:7    }               = 1h
+                                                    pebs_record_format {    8:11   }               = 4h
+                                            freeze_while_smm_supported {   12:12   }               = 1h
+                                           full_width_counter_writable {   13:13   }               = 1h
+                                                         pebs_baseline {   14:14   }               = 1h
+                                         performance_metrics_available {   15:15   }               = 0h
+                                        pebs_output_in_pt_trace_stream {   16:16   }               = 0h
+                                                              reserved {   17:63   }               = 0h
+               [ia32_fixed_ctr_ctrl | 38D] {0h}
+                                                                en0_os {    0:0    }               = 0h
+                                                               en0_usr {    1:1    }               = 0h
+                                                               anythr0 {    2:2    }               = 0h
+                                                               en0_pmi {    3:3    }               = 0h
+                                                                en1_os {    4:4    }               = 0h
+                                                               en1_usr {    5:5    }               = 0h
+                                                               anythr1 {    6:6    }               = 0h
+                                                               en1_pmi {    7:7    }               = 0h
+                                                                en2_os {    8:8    }               = 0h
+                                                               en2_usr {    9:9    }               = 0h
+                                                               anythr2 {   10:10   }               = 0h
+                                                               en2_pmi {   11:11   }               = 0h
+                                                                en3_os {   12:12   }               = 0h
+                                                               en3_usr {   13:13   }               = 0h
+                                                             reserved1 {   14:14   }               = 0h
+                                                               en3_pmi {   15:15   }               = 0h
+                                                             reserved2 {   16:63   }               = 0h
+               [ia32_perf_global_status | 38E] {0h}
+                                                              ovf_pmc0 {    0:0    }               = 0h
+                                                              ovf_pmc1 {    1:1    }               = 0h
+                                                              ovf_pmc2 {    2:2    }               = 0h
+                                                              ovf_pmc3 {    3:3    }               = 0h
+                                                              ovf_pmcn {    4:31   }               = 0h
+                                                         ovf_fixedctr0 {   32:32   }               = 0h
+                                                         ovf_fixedctr1 {   33:33   }               = 0h
+                                                         ovf_fixedctr2 {   34:34   }               = 0h
+                                                             reserved1 {   35:47   }               = 0h
+                                                      ovf_perf_metrics {   48:48   }               = 0h
+                                                             reserved2 {   49:54   }               = 0h
+                                                        trace_topa_pmi {   55:55   }               = 0h
+                                                             reserved3 {   56:57   }               = 0h
+                                                               lbr_frz {   58:58   }               = 0h
+                                                               ctr_frz {   59:59   }               = 0h
+                                                                  asci {   60:60   }               = 0h
+                                                            ovf_uncore {   61:61   }               = 0h
+                                                                ovfbuf {   62:62   }               = 0h
+                                                              condchgd {   63:63   }               = 0h
+               [ia32_perf_global_ctrl | 38F] {FFh}
+                                                               en_pmc0 {    0:0    }               = 1h
+                                                               en_pmc1 {    1:1    }               = 1h
+                                                               en_pmc2 {    2:2    }               = 1h
+                                                               en_pmcn {    3:31   }               = 1Fh
+                                                         en_fixed_ctr0 {   32:32   }               = 0h
+                                                         en_fixed_ctr1 {   33:33   }               = 0h
+                                                         en_fixed_ctr2 {   34:34   }               = 0h
+                                                             reserved1 {   35:47   }               = 0h
+                                                       en_perf_metrics {   48:48   }               = 0h
+               [ia32_perf_global_ovf_ctrl | 390] {0h}
+                                                        clear_ovf_pmc0 {    0:0    }               = 0h
+                                                        clear_ovf_pmc1 {    1:1    }               = 0h
+                                                        clear_ovf_pmc2 {    2:2    }               = 0h
+                                                        clear_ovf_pmcn {    3:31   }               = 0h
+                                                  clear_ovf_fixed_ctr0 {   32:32   }               = 0h
+                                                  clear_ovf_fixed_ctr1 {   33:33   }               = 0h
+                                                  clear_ovf_fixed_ctr2 {   34:34   }               = 0h
+                                                             reserved1 {   35:54   }               = 0h
+                                                  clear_trace_topa_pmi {   55:55   }               = 0h
+                                                             reserved2 {   56:60   }               = 0h
+                                                      clear_ovf_uncore {   61:61   }               = 0h
+                                                          clear_ovfbuf {   62:62   }               = 0h
+                                                        clear_condchgd {   63:63   }               = 0h
+               [ia32_perf_global_status_set | 391] {0h}
+                                                        cause_ovf_pmc0 {    0:0    }               = 0h
+                                                        cause_ovf_pmc1 {    1:1    }               = 0h
+                                                        cause_ovf_pmc2 {    2:2    }               = 0h
+                                                        cause_ovf_pmcn {    3:31   }               = 0h
+                                                  cause_ovf_fixed_ctr0 {   32:32   }               = 0h
+                                                  cause_ovf_fixed_ctr1 {   33:33   }               = 0h
+                                                  cause_ovf_fixed_ctr2 {   34:34   }               = 0h
+                                                             reserved1 {   35:47   }               = 0h
+                                                  set_ovf_perf_metrics {   48:48   }               = 0h
+                                                             reserved2 {   49:54   }               = 0h
+                                                  cause_trace_topa_pmi {   55:55   }               = 0h
+                                                             reserved3 {   56:57   }               = 0h
+                                                         cause_lbr_frz {   58:58   }               = 0h
+                                                         cause_ctr_frz {   59:59   }               = 0h
+                                                            cause_asci {   60:60   }               = 0h
+                                                      cause_ovf_uncore {   61:61   }               = 0h
+                                                          cause_ovfbuf {   62:62   }               = 0h
+                                                             reserved4 {   63:63   }               = 0h
+               [ia32_perf_global_inuse | 392] {0h}
+                                                    perfevtsel0_in_use {    0:0    }               = 0h
+                                                    perfevtsel1_in_use {    1:1    }               = 0h
+                                                    perfevtsel2_in_use {    2:2    }               = 0h
+                                                    perfevtseln_in_use {    3:31   }               = 0h
+                                                     fixed_ctr0_in_use {   32:32   }               = 0h
+                                                     fixed_ctr1_in_use {   33:33   }               = 0h
+                                                     fixed_ctr2_in_use {   34:34   }               = 0h
+                                                             reserved1 {   35:62   }               = 0h
+                                                            pmi_in_use {   63:63   }               = 0h
+               [unsupported_msr | 396] {1000Ch}
+                                                                 value {    0:64   }               = 0h
+               [ia32_pebs_enable | 3F1] {0h}
+                                                           enable_pebs {    0:0    }               = 0h
+                                                             reserved1 {    1:3    }               = 0h
+                                                             reserved2 {    4:31   }               = 0h
+                                                             reserved3 {   32:34   }               = 0h
+                                                             reserved4 {   35:63   }               = 0h
+               [unsupported_msr | 3F2] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 3F6] {FFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 3F7] {800h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 3F8] {622E70242D2h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 3F9] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 3FA] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 3FC] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 3FD] {C3332ACAh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 3FE] {265F4149F2DEh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 400] {1FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 401] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 402] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 403] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 404] {1Fh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 405] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 406] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 407] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 408] {1Fh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 409] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 40A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 40B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 40C] {7Fh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 40D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 40E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 40F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 410] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 411] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 412] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 413] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 414] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 415] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 416] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 417] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 418] {FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 419] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 41A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 41B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 41C] {3Fh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 41D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 41E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 41F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 420] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 421] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 422] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 423] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 424] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 425] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 426] {FEF00400h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 427] {3880000086h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 428] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 429] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 42A] {FEF00440h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 42B] {3880000086h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 42C] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 42D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 42E] {FEF00600h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 42F] {3880000086h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 430] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 431] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 432] {FEF00640h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 433] {3880000086h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 434] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 435] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 436] {FEF00040h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 437] {3880000086h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 438] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 439] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 43A] {FEF00000h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 43B] {3880000086h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 43C] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 43D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 43E] {FEF00240h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 43F] {3880000086h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 440] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 441] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 442] {FEF00200h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 443] {3880000086h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 444] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 445] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 446] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 447] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 448] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 449] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 44A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 44B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 44C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 44D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 44E] {FFFFFFFFFFFFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 44F] {FFFFFFFFFFFFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 450] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 451] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 452] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 453] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 454] {7FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 455] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 456] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 457] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 480] {3DA050000000013h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 481] {FF00000016h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 482] {FFFBFFFE0401E172h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 483] {F77FFFFF00036DFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 484] {76FFFF000011FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 485] {7004C1E7h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 486] {80000021h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 487] {FFFFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 488] {2000h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 489] {1FF6FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 48A] {2Eh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 48B] {F5D7FFF00000000h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 48C] {10F0106F34141h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 48D] {FF00000016h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 48E] {FFFBFFFE04006172h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 48F] {F77FFFFF00036DFBh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 490] {76FFFF000011FBh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 491] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 492] {Fh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 493] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4C1] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4C2] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4C3] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4C4] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4C5] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4C6] {FFFFFFE4E04Ch}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4C7] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4C8] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4E0] {5h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 4E2] {1Dh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 4E3] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4E8] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 4EA] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 503] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 540] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 541] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 560] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 561] {7Fh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 570] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 571] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 572] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 580] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 581] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 582] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 583] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 600] {FFFF8281A69D93C0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 601] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 603] {36000000363636h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 606] {A0E03h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 607] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 608] {3h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 609] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 60A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 60B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 60C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 60D] {171BD22956B4h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 610] {42FFF800DFFFF8h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 611] {56127D33h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 613] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 614] {3E8h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 615] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 618] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 619] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 61B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 61D] {D4C8E3A836h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 620] {832h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 621] {26EB002Dh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 622] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 623] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 630] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 631] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 632] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 633] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 634] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 635] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 636] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 638] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 639] {1EFB7D54h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 63A] {10h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 640] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 641] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 642] {10h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 648] {1Eh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 649] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 64A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 64B] {80000000h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 64C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 64D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 64E] {333DBB9028h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 64F] {10000000h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 650] {2C2C2C2C2C2C2C2Ch}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 651] {FFFFFFFFFFFFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 658] {A1C5142EE90h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 659] {78A028E2FFCh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 65A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 65B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 65C] {DD0000h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 65E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 65F] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 660] {554DA41C9Ch}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 664] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 680] {1h}
+                                                                 value {    0:64   }               = 1h
+               [ia32_u_cet | 6A0] {0h}
+                                                             sh_stk_en {    0:0    }               = 0h
+                                                           wr_shstk_en {    1:1    }               = 0h
+                                                              endbr_en {    2:2    }               = 0h
+                                                             leg_iw_en {    3:3    }               = 0h
+                                                           no_track_en {    4:4    }               = 0h
+                                                          suppress_dis {    5:5    }               = 0h
+                                                             reserved1 {    6:9    }               = 0h
+                                                              suppress {   10:10   }               = 0h
+                                                               tracker {   11:11   }               = 0h
+                                                    eb_leg_bitmap_base {   12:63   }               = 0h
+               [unsupported_msr | 6A2] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 6A4] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 6A5] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 6A6] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 6A7] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 6A8] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 6B0] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 6B1] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 6E0] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 6E1] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 770] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 771] {1142741h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 772] {8000FF01h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 773] {5h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 774] {19E5400FF02h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 775] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 776] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 777] {4h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 802] {10h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 803] {1060015h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 808] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 80A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 80D] {10001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 80F] {1DFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 810] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 811] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 812] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 813] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 814] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 815] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 816] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 817] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 818] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 819] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 81A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 81B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 81C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 81D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 81E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 81F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 820] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 821] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 822] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 823] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 824] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 825] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 826] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 827] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 828] {40h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 82F] {35h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 830] {1000000082Fh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 832] {D1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 833] {CDh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 834] {FEh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 835] {100D8h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 836] {400h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 837] {E2h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 838] {12C1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 839] {1022h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 83E] {Ah}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 981] {F400000004h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 982] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 983] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 984] {0h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_copy_status5 | 990] {0h}
+                      iwkey_copy_successful_status_of_most_recent_copy {    0:0    }               = 0h
+                                                              reserved {    1:63   }               = 0h
+               [ia32_iwkeybackup_status5 | 991] {4h}
+                                                  backup_restore_valid {    0:0    }               = 0h
+                                                              reserved {    1:1    }               = 0h
+                                   backup_key_storage_read_write_error {    2:2    }               = 1h
+                                                  iwkeybackup_consumed {    3:3    }               = 0h
+                                                              reserved {    4:63   }               = 0h
+               [unsupported_msr | 9FF] {0h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_debug_interface | C80] {40000000h}
+                                         enable_silicon_debug_features {    0:0    }               = 0h
+                                                              reserved {    1:29   }               = 0h
+                                                                  lock {   30:30   }               = 1h
+                                                        debug_occurred {   31:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [ia32_l2_qos_cfg | C82] {0h}
+                                           enable_l2_cat_masks_and_cos {    0:0    }               = 0h
+                                                              reserved {    1:63   }               = 0h
+               [unsupported_msr | C85] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | C87] {18h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_pqr_assoc | C8F] {0h}
+                                                resource_monitoring_id {    0:31   }               = 0h
+                                                              reserved {   32:31   }               = 0h
+                                                      class_of_service {   32:63   }               = 0h
+               [unsupported_msr | C90] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C91] {212h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | C92] {EAAh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | C93] {EEEh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | C94] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C95] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C96] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C97] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C98] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C99] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C9A] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C9B] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C9C] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C9D] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C9E] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | C9F] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | D10] {FFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | D11] {FFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | D12] {FFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | D13] {FFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | D14] {FFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | D15] {FFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | D16] {FFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | D17] {FFFFh}
+                                                                 value {    0:64   }               = 1h
+               [ia32_xss | DA0] {100h}
+                                                            reserved_1 {    0:7    }               = 0h
+                                                              pt_state {    8:8    }               = 1h
+                                                            reserved_2 {    9:9    }               = 0h
+                                                           pasid_state {   10:10   }               = 0h
+                                                           cet_u_state {   11:11   }               = 0h
+                                                           cet_s_state {   12:12   }               = 0h
+                                                             hdc_state {   13:13   }               = 0h
+                                                           uintr_state {   14:14   }               = 0h
+                                                             lbr_state {   15:15   }               = 0h
+                                                             hwp_state {   16:16   }               = 0h
+                                                            reserved_3 {   17:63   }               = 0h
+               [unsupported_msr | E1F] {F02040107h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | E20] {55555555h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | E21] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E22] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E23] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E24] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E25] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E26] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E27] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E28] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E29] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E2A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E2B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E2C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E2D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E2E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | E2F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1200] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1201] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1202] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1203] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1204] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1205] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1206] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1207] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1208] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1209] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 120A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 120B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 120C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 120D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 120E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 120F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1210] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1211] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1212] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1213] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1214] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1215] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1216] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1217] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1218] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1219] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 121A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 121B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 121C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 121D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 121E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 121F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 14CE] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 14CF] {20h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1500] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1501] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1502] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1503] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1504] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1505] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1506] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1507] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1508] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1509] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 150A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 150B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 150C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 150D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 150E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 150F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1510] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1511] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1512] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1513] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1514] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1515] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1516] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1517] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1518] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1519] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 151A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 151B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 151C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 151D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 151E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 151F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1600] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1601] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1602] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1603] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1604] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1605] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1606] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1607] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1608] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1609] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 160A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 160B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 160C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 160D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 160E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 160F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1610] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1611] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1612] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1613] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1614] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1615] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1616] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1617] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1618] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1619] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 161A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 161B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 161C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 161D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 161E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 161F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_hw_feedback_ptr | 17D0] {87FC02001h}
+                                                                 valid {    0:0    }               = 1h
+                                                            reserved_1 {    1:11   }               = 0h
+                                                                  addr {   12:63   }               = 87FC02h
+               [ia32_hw_feedback_config | 17D1] {3h}
+                                                                enable {    0:0    }               = 1h
+                                                              reserved {    1:63   }               = 1h
+               [ia32_thread_feedback_char | 17D2] {8000000000000001h}
+                                                  application_class_id {    0:7    }               = 1h
+                                                              reserved {    8:62   }               = 0h
+                                                             valid_bit {   63:63   }               = 1h
+               [ia32_hw_feedback_thread_config | 17D4] {1h}
+                                         enables_intel_thread_director {    0:0    }               = 1h
+                                                              reserved {    1:63   }               = 0h
+               [ia32_hreset_enable | 17DA] {1h}
+                         enable_reset_of_intel_thread_director_history {    0:0    }               = 1h
+                                       reserved_for_other_capabilities {    1:31   }               = 0h
+                                                              reserved {   32:63   }               = 0h
+               [unsupported_msr | 1830] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1831] {AAAAAAh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1832] {101011h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1833] {1001h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1834] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1835] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1836] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1837] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1838] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1839] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 183A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 183B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 183C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 183D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 183E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 183F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1850] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1851] {555555h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1852] {404044h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1853] {4004h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1854] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1855] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1856] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1857] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1858] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1859] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 185A] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 185B] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 185C] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 185D] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 185E] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 185F] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1890] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1891] {212121h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1892] {AEAEAAh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1893] {FFAFEAh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1894] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1895] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1896] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1897] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1898] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1899] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 189A] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 189B] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 189C] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 189D] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 189E] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 189F] {FFFFFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 18B0] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 18B1] {555h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 18B2] {21h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 18B3] {1h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 18B4] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18B5] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18B6] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18B7] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18B8] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18B9] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18BA] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18BB] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18BC] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18BD] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18BE] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18BF] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18D0] {FFFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 18D1] {AAAh}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18D2] {12h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18D3] {2h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18D4] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18D5] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18D6] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18D7] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18D8] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18D9] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18DA] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18DB] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18DC] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18DD] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18DE] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 18DF] {0h}
+                                                                 value {    0:64   }               = 0h
+               [unsupported_msr | 1A8F] {40070007h}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1A90] {FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1A91] {FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1A92] {FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1A93] {FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1A94] {FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1A95] {FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1A96] {FFh}
+                                                                 value {    0:64   }               = 1h
+               [unsupported_msr | 1A97] {FFh}
+                                                                 value {    0:64   }               = 1h
+               [ia32_uarch_misc_ctl | 1B01] {0h}
+                                                                 doitm {    0:0    }               = 0h
+                                                              reserved {    1:63   }               = 0h
+               [ia32_efer | C0000080] {D01h}
+                                                                   sce {    0:0    }               = 1h
+                                                             reserved1 {    1:7    }               = 0h
+                                                                   lme {    8:8    }               = 1h
+                                                             reserved2 {    9:9    }               = 0h
+                                                                   lma {   10:10   }               = 1h
+                                                                   nxe {   11:11   }               = 1h
+                                                             reserved3 {   12:63   }               = 0h
+               [ia32_star | C0000081] {23001000000000h}
+                                                              reserved {    0:31   }               = 0h
+                                                         syscall_cs_ss {   32:47   }               = 10h
+                                                          sysret_cs_ss {   48:63   }               = 23h
+               [ia32_lstar | C0000082] {FFFFF80032245500h}
+                                                                 value {    0:63   }               = 0h
+               [ia32_cstar | C0000083] {FFFFF80032245000h}
+                                                                 value {    0:63   }               = 0h
+               [ia32_fmask | C0000084] {4700h}
+                                                                 value {    0:63   }               = 0h
+               [ia32_fs_base | C0000100] {0h}
+                                                                 value {    0:63   }               = 0h
+               [ia32_gs_base | C0000101] {FFFF8281A71D1000h}
+                                                                 value {    0:63   }               = 0h
+               [unsupported_msr | C0000102] {A97428E000h}
+                                                                 value {    0:64   }               = 0h
+               [ia32_tsc_aux | C0000103] {6h}
+                                                                   aux {    0:31   }               = 6h
+                                                              reserved {   32:63   }               = 0h
