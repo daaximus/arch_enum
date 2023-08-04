@@ -50,12 +50,16 @@ struct msr_query
     {
         msr_data = rdmsr( index );
 
-
         const auto search = msr_schema_list.find( index );
         if ( search != msr_schema_list.end() )
             schema = search->second;
         else
-            schema = msr_schema_invalid;
+        {
+            if ( index >= 0x40000000 && index <= 0x400000ff )
+                schema = reserved_msr_address_space;
+            else
+                schema = msr_schema_invalid;
+        }
 
         bf = bitfield( msr_data );
     }

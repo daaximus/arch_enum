@@ -888,6 +888,635 @@ inline msr_schema_map msr_schema_1b01h = {
     }}
 };
 
+// MSR schema for IA32_PPIN
+inline msr_schema_map msr_schema_4fh = {
+    {"ia32_ppin", {
+        {"protected_processor_inventory_number", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_8bh = {
+    {"ia32_bios_sign_id", {
+        {"reserved", 0, 31},
+        {"microcode_update_signature", 32, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_200h = {
+    {"ia32_mtrr_physbase0", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_201h = {
+    {"ia32_mtrr_physmask0", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_202h = {
+    {"ia32_mtrr_physbase1", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_203h = {
+    {"ia32_mtrr_physmask1", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_204h = {
+    {"ia32_mtrr_physbase2", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_205h = {
+    {"ia32_mtrr_physmask2", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_206h = {
+    {"ia32_mtrr_physbase3", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_207h = {
+    {"ia32_mtrr_physmask3", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_208h = {
+    {"ia32_mtrr_physbase4", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_209h = {
+    {"ia32_mtrr_physmask4", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_20ah = {
+    {"ia32_mtrr_physbase5", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_20bh = {
+    {"ia32_mtrr_physmask5", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_20ch = {
+    {"ia32_mtrr_physbase6", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_20dh = {
+    {"ia32_mtrr_physmask6", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_20eh = {
+    {"ia32_mtrr_physbase7", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_20fh = {
+    {"ia32_mtrr_physmask7", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_210h = {
+    {"ia32_mtrr_physbase8", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_211h = {
+    {"ia32_mtrr_physmask8", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_212h = {
+    {"ia32_mtrr_physbase9", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_213h = {
+    {"ia32_mtrr_physmask9", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_250h = {
+    {"ia32_mtrr_fix64k_00000", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_258h = {
+    {"ia32_mtrr_fix16k_80000", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_259h = {
+    {"ia32_mtrr_fix16k_a0000", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_268h = {
+    {"ia32_mtrr_fix4k_c0000", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_269h = {
+    {"ia32_mtrr_fix4k_c8000", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_26ah = {
+    {"ia32_mtrr_fix4k_d0000", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_vmx_basic = {
+    {"ia32_vmx_basic", {
+        {"vmcs_revision_id", 0, 30},
+        {"reserved_0", 31, 31},
+        {"vmcs_region_size", 32, 44},
+        {"reserved_1", 45, 47},
+        {"physical_memory_width_vmcs", 48, 48},
+        {"dual_monitor_smi_smm", 49, 49},
+        {"vmcs_memory_type", 50, 53},
+        {"vm_exit_information", 54, 54},
+        {"supports_true_msrs_ctls", 55, 55},
+        {"reserved_2", 56, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_vmx_misc = {
+    {"ia32_vmx_misc", {
+        {"vmx_preemption_tsc_rate", 0, 4},
+        {"vm_entry_control_store_ia32_efer_lma", 5, 5},
+        {"activity_state_bitmap", 6, 8},
+        {"reserved_1", 9, 13},
+        {"intel_pt_vmx_operation", 14, 14},
+        {"rdmsr_smm_smbase", 15, 15},
+        {"number_of_supported_cr3_target_values", 16, 24},
+        {"max_count_supported_msrs_msr_store_area", 25, 27},
+        {"smi_blocking_allowed", 28, 28},
+        {"vmwrite_any_supported_vmcs_field", 29, 29},
+        {"vm_entry_soft_interrupt_length_0", 30, 30},
+        {"reserved_2", 31, 31},
+        {"mseg_revision_identifier", 32, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_vmx_ept_vpid_cap = {
+    {"ia32_vmx_ept_vpid_cap", {
+        {"ept_execute_only", 0, 0},
+        {"reserved_0", 1, 5},
+        {"page_walk_length_4", 6, 6},
+        {"reserved_1", 7, 7},
+        {"uncacheable_type_supported", 8, 8},
+        {"reserved_2", 9, 13},
+        {"write_back_type_supported", 14, 14},
+        {"reserved_3", 15, 15},
+        {"pde_maps_2mb_page", 16, 16},
+        {"pdpte_maps_1gb_page", 17, 17},
+        {"reserved_4", 18, 19},
+        {"invept_supported", 20, 20},
+        {"accessed_dirty_supported", 21, 21},
+        {"advanced_vm_exit_info_ept_violations", 22, 22},
+        {"reserved_5", 23, 24},
+        {"single_context_invept_supported", 25, 25},
+        {"all_context_invept_supported", 26, 26},
+        {"reserved_6", 27, 31},
+        {"invvpid_supported", 32, 32},
+        {"reserved_7", 33, 39},
+        {"individual_address_invvpid_supported", 40, 40},
+        {"single_context_invvpid_supported", 41, 41},
+        {"all_context_invvpid_supported", 42, 42},
+        {"scrg_invvpid_supported", 43, 43},
+        {"reserved_8", 44, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_mtrr_cap = {
+    {"ia32_mtrr_cap", {
+        {"variable_range_registers_count", 0, 7},
+        {"fix_supported", 8, 8},
+        {"reserved_0", 9, 9},
+        {"write_combining_supported", 10, 10},
+        {"smrr_supported", 11, 11},
+        {"reserved_1", 12, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_star = {
+    {"ia32_star", {
+        {"reserved", 0, 31},
+        {"syscall_cs_ss", 32, 47},
+        {"sysret_cs_ss", 48, 63}
+    }}
+};
+
+inline msr_schema_map procbased_ctls2 = {
+    {"procbased_ctls2", {
+        {"virtualize_apic_accesses", 0, 0},
+        {"enable_ept", 1, 1},
+        {"descriptor_table_exiting", 2, 2},
+        {"enable_rdtscp", 3, 3},
+        {"virtualize_x2apic_mode", 4, 4},
+        {"enable_vpid", 5, 5},
+        {"wbinbd_exiting", 6, 6},
+        {"unrestricted_guest", 7, 7},
+        {"apic_register_virtualization", 8, 8},
+        {"virtual_interrupt_delivery", 9, 9},
+        {"pause_loop_exiting", 10, 10},
+        {"rdrand_exiting", 11, 11},
+        {"enable_invpcid", 12, 12},
+        {"enable_vmfunc", 13, 13},
+        {"vmcs_shadowing", 14, 14},
+        {"enable_encls_exiting", 15, 15},
+        {"rdseed_exiting", 16, 16},
+        {"enable_pml", 17, 17},
+        {"ept_violation_ve", 18, 18},
+        {"conceal_vmx_from_pt", 19, 19},
+        {"enable_xsaves_xrstors", 20, 20},
+        {"reserved_0", 21, 21},
+        {"mode_based_execute_ctl_for_ept", 22, 22},
+        {"sub_page_write_permissions_for_ept", 23, 23},
+        {"pt_guest_physical_addresses", 24, 24},
+        {"use_tsc_scaling", 25, 25},
+        {"enable_user_wait_and_pause", 26, 26},
+        {"reserved_1", 27, 27},
+        {"enable_enclv_exiting", 28, 28},
+        {"reserved_2", 29, 31}
+    }}
+};
+
+inline msr_schema_map procbased_ctls = {
+    {"procbased_ctls", {
+        {"reserved_0", 0, 1},
+        {"interrupt_window_exiting", 2, 2},
+        {"use_tsc_offsetting", 3, 3},
+        {"reserved_1", 4, 6},
+        {"hlt_exiting", 7, 7},
+        {"reserved_2", 8, 8},
+        {"invlpg_exiting", 9, 9},
+        {"mwait_exiting", 10, 10},
+        {"rdpmc_exiting", 11, 11},
+        {"rdtsc_exiting", 12, 12},
+        {"reserved_3", 13, 14},
+        {"cr3_load_exiting", 15, 15},
+        {"cr3_store_exiting", 16, 16},
+        {"reserved_4", 17, 18},
+        {"cr8_load_exiting", 19, 19},
+        {"cr8_store_exiting", 20, 20},
+        {"use_tpr_shadow", 21, 21},
+        {"nmi_window_exiting", 22, 22},
+        {"mov_dr_exiting", 23, 23},
+        {"unconditional_io_exiting", 24, 24},
+        {"use_io_bitmaps", 25, 25},
+        {"reserved_5", 26, 26},
+        {"monitor_trap_flag", 27, 27},
+        {"use_msr_bitmaps", 28, 28},
+        {"monitor_exiting", 29, 29},
+        {"pause_exiting", 30, 30},
+        {"activate_secondary_ctls", 31, 31}
+    }}
+};
+
+inline msr_schema_map pinbased_ctls = {
+    {"pinbased_ctls", {
+        {"external_interrupt_exiting", 0, 0},
+        {"reserved_1", 1, 2},
+        {"nmi_exiting", 3, 3},
+        {"reserved_2", 4, 4},
+        {"virtual_nmis", 5, 5},
+        {"activate_vmx_preemption_timer", 6, 6},
+        {"process_posted_interrupts", 7, 7},
+        {"reserved_3", 8, 31}
+    }}
+};
+
+inline msr_schema_map exit_ctls = {
+    {"exit_ctls", {
+        {"reserved_0", 0, 1},
+        {"save_debug_controls", 2, 2},
+        {"reserved_1", 3, 8},
+        {"exit_64bit_mode", 9, 9},
+        {"reserved_2", 10, 11},
+        {"load_ia32_perf_global_ctrl", 12, 12},
+        {"reserved_3", 13, 14},
+        {"acknowledge_interrupt_on_exit", 15, 15},
+        {"reserved_4", 16, 17},
+        {"save_ia32_pat", 18, 18},
+        {"load_ia32_pat", 19, 19},
+        {"save_ia32_efer", 20, 20},
+        {"load_ia32_efer", 21, 21},
+        {"save_vmx_preemption_timer", 22, 22},
+        {"clear_ia32_bndcfgs", 23, 23},
+        {"conceal_vmx_from_pt", 24, 24},
+        {"clear_ia32_rtit_ctl", 25, 25},
+        {"reserved_5", 26, 31}
+    }}
+};
+
+inline msr_schema_map entry_ctls = {
+    {"entry_ctls", {
+        {"reserved_0", 0, 1},
+        {"load_debug_controls", 2, 2},
+        {"reserved_1", 3, 8},
+        {"ia32e_mode", 9, 9},
+        {"entry_to_smm", 10, 10},
+        {"deactivate_dual_monitor_treatment", 11, 11},
+        {"reserved_2", 12, 12},
+        {"load_ia32_perf_global_ctrl", 13, 13},
+        {"load_ia32_pat", 14, 14},
+        {"load_ia32_efer", 15, 15},
+        {"load_ia32_bndcfgs", 16, 16},
+        {"conceal_vmx_from_pt", 17, 17},
+        {"load_ia32_rtit_ctl", 18, 18},
+        {"reserved_3", 19, 31}
+    }}
+};
+
+inline msr_schema_map msr_schema_lstar = {
+    {"ia32_lstar", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_cstar = {
+    {"ia32_cstar", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_fmask = {
+    {"ia32_fmask", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_fs_base = {
+    {"ia32_fs_base", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_gs_base = {
+    {"ia32_gs_base", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_kernel_gs_base = {
+    {"ia32_kernel_gs_base", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_tsc_aux = {
+    {"ia32_tsc_aux", {
+        {"aux", 0, 31},
+        {"reserved", 32, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_hw_feedback_ptr = {
+    {"ia32_hw_feedback_ptr", {
+        {"valid", 0, 0},
+        {"reserved_1", 1, 11},
+        {"addr", 12, 63} // Assuming MAXPHYADDR = 64
+    }}
+};
+
+inline msr_schema_map msr_schema_hw_feedback_config = {
+    {"ia32_hw_feedback_config", {
+        {"enable", 0, 0},
+        {"reserved", 1, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_thread_feedback_char = {
+    {"ia32_thread_feedback_char", {
+        {"application_class_id", 0, 7},
+        {"reserved", 8, 62},
+        {"valid_bit", 63, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_hw_feedback_thread_config = {
+    {"ia32_hw_feedback_thread_config", {
+        {"enables_intel_thread_director", 0, 0},
+        {"reserved", 1, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_hreset_enable = {
+    {"ia32_hreset_enable", {
+        {"enable_reset_of_intel_thread_director_history", 0, 0},
+        {"reserved_for_other_capabilities", 1, 31},
+        {"reserved", 32, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_uarch_misc_ctl = {
+    {"ia32_uarch_misc_ctl", {
+        {"data_operand_independent_timing_mode", 0, 0},
+        {"reserved", 1, 63}
+    }}
+};
+
+inline msr_schema_map reserved_msr_address_space = {
+    {"reserved_msr_address_space", {
+        {"value", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_985h = {
+    {"ia32_uintr_rr", {
+        {"uirr_user_interrupt_request_register", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_986h = {
+    {"ia32_uintr_handler", {
+        {"uihandler_user_interrupt_handler_address", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_987h = {
+    {"ia32_uintr_stackadjust", {
+        {"load_rsp_user_interrupt_stack_mode", 0, 0},
+        {"reserved", 1, 2},
+        {"stack_adjust_value", 3, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_988h = {
+    {"ia32_uintr_misc", {
+        {"uittsz_user_interrupt_target_table_size", 0, 31},
+        {"uinv_user_interrupt_notification_vector", 32, 39},
+        {"reserved", 40, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_989h = {
+    {"ia32_uintr_pd", {
+        {"reserved", 0, 5},
+        {"upidaddr_user_interrupt_pid_address", 6, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_98ah = {
+    {"ia32_uintr_tt", {
+        {"senduipi_enable_user_interrupt_target_table_valid", 0, 0},
+        {"reserved", 1, 3},
+        {"uittaddr_user_interrupt_target_table_base_address", 4, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_990h = {
+    {"ia32_copy_status5", {
+        {"iwkey_copy_successful_status_of_most_recent_copy", 0, 0},
+        {"reserved", 1, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_991h = {
+    {"ia32_iwkeybackup_status5", {
+        {"backup_restore_valid", 0, 0},
+        {"reserved", 1, 1},
+        {"backup_key_storage_read_write_error", 2, 2},
+        {"iwkeybackup_consumed", 3, 3},
+        {"reserved", 4, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_c80h = {
+    {"ia32_debug_interface", {
+        {"enable_silicon_debug_features", 0, 0},
+        {"reserved", 1, 29},
+        {"lock", 30, 30},
+        {"debug_occurred", 31, 31},
+        {"reserved", 32, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_c81h = {
+    {"ia32_l3_qos_cfg", {
+        {"enable_l3_cat_masks_and_cos", 0, 0},
+        {"reserved", 1, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_c82h = {
+    {"ia32_l2_qos_cfg", {
+        {"enable_l2_cat_masks_and_cos", 0, 0},
+        {"reserved", 1, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_c8dh = {
+    {"ia32_qm_evtsel", {
+        {"event_id", 0, 7},
+        {"reserved", 8, 31},
+        {"resource_monitoring_id", 32, 63}  // Note: N is dependent on CPUID
+    }}
+};
+
+inline msr_schema_map msr_schema_c8eh = {
+    {"ia32_qm_ctr", {
+        {"resource_monitored_data", 0, 61},
+        {"unavailable", 62, 62},
+        {"error", 63, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_c8fh = {
+    {"ia32_pqr_assoc", {
+        {"resource_monitoring_id", 0, 31},  // Note: N is dependent on CPUID
+        {"reserved", 32, 31},
+        {"class_of_service", 32, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_d93h = {
+    {"ia32_pasid", {
+        {"process_address_space_identifier", 0, 19},
+        {"reserved_1", 20, 30},
+        {"valid", 31, 31},
+        {"reserved_2", 32, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_da0h = {
+    {"ia32_xss", {
+        {"reserved_1", 0, 7},
+        {"pt_state", 8, 8},
+        {"reserved_2", 9, 9},
+        {"pasid_state", 10, 10},
+        {"cet_u_state", 11, 11},
+        {"cet_s_state", 12, 12},
+        {"hdc_state", 13, 13},
+        {"uintr_state", 14, 14},
+        {"lbr_state", 15, 15},
+        {"hwp_state", 16, 16},
+        {"reserved_3", 17, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_db0h = {
+    {"ia32_pkg_hdc_ctl", {
+        {"hdc_pkg_enable", 0, 0},
+        {"reserved", 1, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_db1h = {
+    {"ia32_pm_ctl1", {
+        {"hdc_allow_block", 0, 0},
+        {"reserved", 1, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_db2h = {
+    {"ia32_thread_stall", {
+        {"stall_cycle_cnt", 0, 63}
+    }}
+};
+
+inline msr_schema_map msr_schema_1406h = {
+    {"ia32_mcu_control", {
+        {"lock", 0, 0},
+        {"dis_mcu_load", 1, 1},
+        {"en_smm_bypass", 2, 2},
+        {"reserved", 3, 63}
+    }}
+};
 
 inline std::unordered_map<int32_t, msr_schema_map> msr_schema_list = {
     {0x00000000, msr_schema_invalid},
@@ -973,8 +1602,40 @@ inline std::unordered_map<int32_t, msr_schema_map> msr_schema_list = {
     {0x00000392, msr_schema_392h},
     {0x000003F1, msr_schema_3f1h},
     {0x000006A0, msr_schema_6a0h},
+    {0x00000985, msr_schema_985h},
+    {0x00000986, msr_schema_986h},
+    {0x00000987, msr_schema_987h},
+    {0x00000988, msr_schema_988h},
+    {0x00000989, msr_schema_989h},
+    {0x0000098a, msr_schema_98ah},
+    {0x00000990, msr_schema_990h},
+    {0x00000991, msr_schema_991h},
+    {0x00000c80, msr_schema_c80h},
+    {0x00000c81, msr_schema_c81h},
+    {0x00000c82, msr_schema_c82h},
+    {0x00000c8d, msr_schema_c8dh},
+    {0x00000c8e, msr_schema_c8eh},
+    {0x00000c8f, msr_schema_c8fh},
+    {0x00000d93, msr_schema_d93h},
+    {0x00000da0, msr_schema_da0h},
+    {0x00000db0, msr_schema_db0h},
+    {0x00000db1, msr_schema_db1h},
+    {0x00000db2, msr_schema_db2h},
+    {0x00001406, msr_schema_1406h},
     {0x00001b01, msr_schema_1b01h},
+    {0x000017d0, msr_schema_hw_feedback_ptr},
+    {0x000017d1, msr_schema_hw_feedback_config},
+    {0x000017d2, msr_schema_thread_feedback_char},
+    {0x000017d4, msr_schema_hw_feedback_thread_config},
+    {0x000017da, msr_schema_hreset_enable},
     {0xc0000080, msr_schema_efer},
+    {0xc0000081, msr_schema_star},
+    {0xc0000082, msr_schema_lstar},
+    {0xc0000083, msr_schema_cstar},
+    {0xc0000084, msr_schema_fmask},
+    {0xc0000100, msr_schema_fs_base},
+    {0xc0000101, msr_schema_gs_base},
+    {0xc0000103, msr_schema_tsc_aux},
 
     // add more schema maps here...
     //
