@@ -26,6 +26,12 @@
 #include <unordered_map>
 #include <vector>
 
+constexpr static auto valid_msr_range_end = 0x00001fff;
+constexpr static auto reserved_msr_range_start = 0x40000000;
+constexpr static auto reserved_msr_range_end = 0x400000ff;
+constexpr static auto valid_msr_range_start2 = 0xc0000000;
+constexpr static auto valid_msr_range_end2 = 0xc0001fff;
+
 struct msr_field
 {
     std::string name;
@@ -49,8 +55,8 @@ struct msr_schema
 using msr_schema_map = std::unordered_map<std::string, msr_schema>;
 
 inline msr_schema_map msr_schema_invalid = {
-    {"invalid_msr", {
-        {"invalid", 0, 64},
+    {"unsupported_msr", {
+        {"value", 0, 64},
     }}
 };
 
