@@ -97,27 +97,27 @@ int main( int argc, char** argv, char** envp )
 {
     // [[Example for KM display of all MSRs that have a schema in the list]]
     //
-    for ( const auto& index : msr_schema_list | std::views::keys )
-    {
-        msr_query msr( index );
-        for ( auto& [name, schema] : msr.get_schema() )
-        {
-            printf( "%15c[%s] {%llXh}\n", ' ', name.c_str(), msr.bf.data );
-    
-            for ( auto& field : schema.fields )
-            {
-                auto field_value = msr.bf.range( field.bit_start, field.bit_end );
-                printf( "%70s {%5llu:%-5llu} %15s %llXh\n",
-                                                   field.name.c_str(),
-                                                   field.bit_start,
-                                                   field.bit_end,
-                                                   "=",
-                                                   field_value.as<uint64_t>() );
-
-            }
-            break;
-        }
-    }
+    // for ( const auto& index : msr_schema_list | std::views::keys )
+    // {
+    //     msr_query msr( index );
+    //     for ( auto& [name, schema] : msr.get_schema() )
+    //     {
+    //         printf( "%15c[%s] {%llXh}\n", ' ', name.c_str(), msr.bf.data );
+    // 
+    //         for ( auto& field : schema.fields )
+    //         {
+    //             auto field_value = msr.bf.range( field.bit_start, field.bit_end );
+    //             printf( "%70s {%5llu:%-5llu} %15s %llXh\n",
+    //                                                field.name.c_str(),
+    //                                                field.bit_start,
+    //                                                field.bit_end,
+    //                                                "=",
+    //                                                field_value.as<uint64_t>() );
+    // 
+    //         }
+    //         break;
+    //     }
+    // }
 
 
     // [[Example for UM display of all CPUID leaves and their associated bitfields / values]]
