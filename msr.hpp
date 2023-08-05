@@ -48,7 +48,7 @@ struct msr_query
 
     explicit msr_query( uint32_t index ) : msr_index( index )
     {
-        msr_data = rdmsr( index );
+        msr_data = 0x88FD6B;//rdmsr( index );
 
         const auto search = msr_schema_list.find( index );
         if ( search != msr_schema_list.end() )
