@@ -56,7 +56,7 @@ using msr_schema_map = std::unordered_map<std::string, msr_schema>;
 
 inline msr_schema_map msr_schema_invalid = {
     {"unsupported_msr", {
-        {"value", 0, 64},
+        {"value", 0, 63},
     }}
 };
 
