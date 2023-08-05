@@ -102,18 +102,19 @@ int main( int argc, char** argv, char** envp )
     //     msr_query msr( index );
     //     for ( auto& [name, schema] : msr.get_schema() )
     //     {
-    //         serial::dbgp( "%15c[%s] {%llXh}\n", ' ', name.c_str(), msr.bf.data );
+    //         printf( "%15c[%s] {%llXh}\n", ' ', name.c_str(), msr.bf.data );
     // 
     //         for ( auto& field : schema.fields )
     //         {
     //             auto field_value = msr.bf.range( field.bit_start, field.bit_end );
-    //             serial::dbgp( "%70s {%5llu:%-5llu} %15s %llXh\n",
+    //             printf( "%70s {%5llu:%-5llu} %15s %llXh\n",
     //                                                field.name.c_str(),
     //                                                field.bit_start,
     //                                                field.bit_end,
     //                                                "=",
-    //                                                static_cast< uint64_t >( field_value ) );
+    //                                                field_value.as<uint64_t>() );
     //         }
+    //         break;
     //     }
     // }
 
@@ -124,13 +125,13 @@ int main( int argc, char** argv, char** envp )
     
     const auto cpu_brand = get_cpu_brand();
     printf( "%s\n", cpu_brand.c_str() );
-
+    
     // Other examples
     //
     cpu_query cpu( 0x0a, 0 );
     auto fv = cpu[ "eax" ].range(8, 15).as<uint8_t>();
     printf( "%Xh\n", fv );
-
+    
     auto field = cpu.get_field( "eax", { 16,23 } );
     printf( "%s %Xh\n", field.field_name.c_str(), field.value );
 

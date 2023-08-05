@@ -103,13 +103,21 @@ struct bitfield
 
         operator T() const
         {
+            if ( len == sizeof( T ) * 8 )
+                return data_ref;
+
             return ( data_ref >> start_position ) & ( ( T( 1 ) << len ) - 1 );
         }
 
-        template <typename AsType>
-        AsType as() const
+        template <typename AsType = uint64_t>
+        [[nodiscard]] AsType as() const
         {
-            return static_cast< AsType >( ( data_ref >> start_position ) & ( ( AsType( 1 ) << len ) - 1 ) );
+            if ( len == std::numeric_limits<AsType>::digits )
+                return static_cast< AsType >( data_ref );
+
+            // If trying to shift full-width of type, behavior is undefined... condition above added.
+            //
+            return static_cast< AsType >( ( data_ref >> start_position ) & ( ( T( 1 ) << len ) - 1 ) );
         }
 
         private:

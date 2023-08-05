@@ -90,7 +90,7 @@ struct msr_query
 
     uint64_t get_bit_range( std::size_t bit_start, std::size_t bit_end ) noexcept
     {
-        uint32_t result = 0;
+        uint64_t result = 0;
         for ( std::size_t i = bit_start; i <= bit_end; ++i )
             result |= ( get_bit( i ) << ( i - bit_start ) );
 
